@@ -3,12 +3,12 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 
-def load_and_preprocess_data(file_path):
+def load_and_preprocess_data(data_path):
     """
     Load the dataset and perform initial preprocessing
     """
     # Load dataset
-    df_raw = pd.read_csv(file_path)
+    df_raw = pd.read_csv(data_path)
     
     # Map to required features
     df = pd.DataFrame({
@@ -57,3 +57,4 @@ def split_data(X, y, test_size=0.2, random_state=42):
     )
     
     return X_train, X_test, y_train, y_test
+    
