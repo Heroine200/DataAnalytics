@@ -59,7 +59,7 @@ git clone https://github.com/your-username/DecisionTreeEmployment.git
 cd DecisionTreeEmployment
 ```
 
-### 2. Create a Virtual Environment
+### 2. (Optional) Create a Virtual Environment
 
 ```bash
 python -m venv venv
@@ -92,6 +92,18 @@ pip install -r requirements.txt
    * Feature importance visualization
 
 ### Run Python Scripts
+
+```bash
+python main.py
+```
+
+**This will:**
+
+* Load and preprocess the data
+* Train the decision tree model
+* Evaluate model performance
+* Generate predictions for sample candidates
+* Save reports to outputs/reports/
 
 If you want to use the modular code:
 
